@@ -1,0 +1,569 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/fondoapp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 90%;
+    width: 80%;
+   
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  
+  
+   
+}
+.container__div{
+    height: 90%;
+   border: solid red 1px;
+    width:500px;
+
+   
+   
+    
+}
+.container__div--1{
+    position: relative;
+  background: rgba(156, 23, 23, 0.97);
+    box-shadow: 0 20px 0 0 rgba(11, 4, 121, 0.97);
+    border-bottom-left-radius: 20px;
+  z-index: 1;
+ 
+    
+   
+}
+
+.container__skew{
+    height: 30%;
+    display: flex;
+    z-index: 100;
+   
+
+
+}
+.container__rectangulo{
+    height: 100%;
+background-color: red;
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 20px 0 0 rgba(11, 4, 121, 0.97);
+
+
+
+
+
+}
+.container__circulo{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+    box-shadow: 0 6px 0 0 rgb(0,0,0,0.5);
+
+}
+.container__circulo::before{
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: solid white 7px;
+    border-bottom: aqua solid 7px;
+    border-left:  aqua solid 7px;
+
+    
+}
+.container__minicirculo{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    border:5px solid rgb(13, 13, 67) ;
+    background-color:rgb(59, 234, 243);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+   
+}
+.container__refle{
+    height: 40px;
+    width: 20px;
+border: solid white 2px;
+background-color:rgb(255,255,255, 0.5);
+
+    border-radius: 50%;
+    margin-left: auto;
+    
+}
+.container__reflesmall{
+height: 20px;
+width: 20px;
+
+border-radius: 50%;
+margin-left: 50px;
+border: solid white 2px;
+background-color:rgb(255,255,255, 0.5);
+}
+.container__diagonal{
+    position: relative;
+background: linear-gradient(-20deg,rgba(201, 20, 20, 0.97) 23%,red  23.4%);
+    height: 100%;
+    flex: 1;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    padding: 15px 0 0 0;
+    
+    
+  
+}
+.container__diagonal::before{
+    position: absolute;
+
+    content: "";
+    width: 112%;
+    height: 19px;
+   
+    background-color:rgba(11, 4, 121, 0.97);
+    bottom: 10px;
+    left: -8px;
+  
+    transform: rotate(-19deg);
+    
+}
+.header__circle{
+    width: 30px;
+    height: 30px;
+ 
+    border-radius: 50%;
+    border:3px solid rgb(13, 13, 67) ;
+}
+.header__circle--red{
+    background-color: rgb(243, 20, 20);
+}
+.header__circle--yellow{
+    background-color: yellow;
+}
+.header__circle--green{
+   background-color: green;
+}
+.container__content{
+    width: 90%;
+    height: 90%;
+    border: solid black 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    border:solid rgba(11, 4, 121, 0.97) 5px;
+    z-index: -1;
+    border-radius: 10px;
+}
+.container__poke{
+    position: absolute;
+    height: 70%;
+    width: 90%;
+    
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 35px;
+ 
+}
+.container__display{
+    width: 80%;
+    height: 60%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 12px 9px 0 0 rgba(11, 4, 121, 0.97);
+    margin-bottom: 30px;
+    
+}
+.container__puntos{
+    height: 25px;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container__point{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+   background-color: brown;
+  
+}.container__visor{
+    height: 210px;
+    margin:  auto;
+    width: 96%;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 0 -3px 0 0 cadetblue;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+}
+.container__imgpo{
+    width: 150px;
+
+}
+.container__info{
+    height: calc(225px - 70%);
+    
+    display:inherit;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.container__name{
+   
+    min-width: 190px;
+   
+
+   
+}
+
+.container__rayas{
+    height: 100%;
+    width: 150px;
+   
+    display: inherit;
+    flex-direction: column;
+    justify-content:center;
+    gap: 5px;
+   
+}
+.container__raya{
+    width: 100%;
+    border: solid rgba(11, 4, 121, 0.97) 3px;
+    border-radius: 5px;
+   
+}
+.container__controls{
+   
+   min-height: 100px;
+
+    display: flex;
+    width: 90%;
+   
+    margin: 0% auto;
+   
+    
+  
+}
+.container__typePokemon{
+flex: 1;
+padding: 10px;
+
+
+
+}
+.container__contorno{
+    
+    display: inline-block;
+    margin-top: 10px;
+    padding: 2px 2px;
+    background-color: green;
+    border-radius: 10px ;
+    box-shadow: 5px 5px rgb(0,0,0,0.5);
+  
+
+    
+  
+}
+
+.container__type{
+    font-size: 12px;
+}
+.container__search{
+padding: 5px;
+width: 200px;
+margin-top: 15px;
+outline: none;
+
+
+
+}
+.container__jost{
+    flex: 1;
+   
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+   
+}
+.container__center{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    
+    background-color:  rgba(11, 4, 121, 0.97);
+ 
+}
+
+.container__btns{
+ position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+  
+
+  
+   
+
+}
+.container__btns--top{
+ top: -35px;
+ box-shadow: 3px 0 rgb(0,0,0,0.5);
+ 
+}
+.container__btns--botton{
+    bottom: -35px;
+    box-shadow: 3px 3px rgb(0,0,0,0.5);
+
+}
+.container__btns--right{
+   
+    right: -35px; 
+    box-shadow: 3px 3px rgb(0,0,0,0.5);
+}
+.container__btns--left{
+    
+    left: -35px;
+    box-shadow: 0 3px rgb(0,0,0,0.5);
+    
+}
+
+
+
+
+.container__div--columna{
+    position: relative;
+    width: 50px;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-end;
+    border-radius: 50px;
+    gap: 10px;
+    background-color: red;
+    z-index: 1;
+}
+.container__div--columna::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50px;
+    background-color:  rgb(12, 4, 121);
+    bottom: 0;
+    border-radius: 50%;
+
+}
+.container__sombra{
+    height: 100%;
+    width: 15px;
+ 
+}
+.container__sombra--1{
+    background-color: rgb(251, 180, 104);
+
+}
+.container__sombra--2{
+    background-color:  rgba(11, 4, 121, 0.97);
+
+}
+
+.container__mini{
+
+  background-color:red;
+    height: 67.7%;
+    flex: 1;
+    box-shadow: 0 20px 0 0 rgba(11, 4, 121, 0.97);
+    
+}
+
+
+.container__div--results{
+    position: relative;
+    height: 60%;
+    margin-top: 200px;
+    box-shadow: 0 20px 0 0 rgba(11, 4, 121, 0.97);
+    border-bottom-right-radius: 20px;
+    display: flex;background-color: red;
+  
+  
+    /* background-color: red; */
+
+}
+.container__div--abs{
+    position: absolute;
+    content: "";
+    height: 75px;
+    width: 400px;
+    top: -55px;
+    left: -110px;
+    border: solid red 1px;
+    /* background-color:inherit; */
+    transform: skewX(60deg);
+    z-index: 0;
+    background-color: red;
+
+}
+.container__div--child{
+position: absolute;
+    width: 200px;
+    height: 50px;
+    border: solid red 1px;
+   top: -29.5px;
+   left: 24.5px;
+   border-left: solid  rgba(11, 4, 121, 0.97) 5px;
+   background-color: red;
+   /* border-top:solid  rgba(11, 4, 121, 0.97) 3px ; */
+   
+
+    
+}
+.container__divskew1{
+    width: 105%;
+    height: 100%;
+    
+    transform: skew(60deg);
+    border-right: solid  rgba(11, 4, 121, 0.97) 10px;
+    border-top:solid  rgba(11, 4, 121, 0.97) 5px ;
+    margin-top: 0.4px;
+    margin-left: 35px;
+    background-color: red;
+  
+    
+}
+
+.container__information{
+    position:relative ;
+    
+ background-color: red;
+
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border-left: solid  rgba(11, 4, 121, 0.97) 5px;
+    border-right: solid  rgba(11, 4, 121, 0.97) 5px;
+    border-bottom: solid  rgba(11, 4, 121, 0.97) 5px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+
+   
+   
+}
+.container__information::before{
+    position: absolute;
+content: "";
+width: 162.8px;
+border: solid rgba(11, 4, 121, 0.97)  3px;
+right: 0;
+top: 0;
+}
+.container__infoge{
+    height: 90px;
+    
+}
+.container__infoge--hability{
+ height: auto;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ padding: 10px 15px;
+ gap: 10px;
+ background-color: rgb(2, 16, 82);
+ border-radius: 10px;
+}
+.container__item{
+    font-size: 8px;
+    color: white;
+
+}
+.container__infoge--panel{
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    
+}
+.container__cuadriculas{
+    border: solid grey 1px;
+    background-color:rgb(110, 181, 204);
+    box-shadow: 5px 0 rgb(255, 255, 255);
+    border-top: solid 3px rgba(255, 255, 255, 0.53) ;
+   
+    
+}
+
+.container__infoge--fisicas{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+.container__minicircle{
+    height: 30px;
+    width: 30px;
+    border: solid black 1px;
+    border-radius: 50%;
+    border:3px solid rgb(13, 13, 67) ;
+    background-color: yellow;
+}
+.container__cosasfi{
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(0,0,0,0.5);
+    width: 160px;
+
+}
+.container__infoge--adornos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+
+}
+.container__adorno{
+    height:90%;
+    width: 200px;
+    background-color: rgb(2, 16, 82); 
+    border-radius: 10px;
+}
